@@ -8,15 +8,15 @@ import lombok.Setter;
 import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "contracts")
+@Table(name = "altered_contracts")
 @Getter
 @Setter
 @NoArgsConstructor
-public class Contract {
+public class AlteredContract {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "contract_seq_gen")
-    @SequenceGenerator(name = "contract_seq_gen", sequenceName = "CONTRACT_SEQ", allocationSize = 1)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "altered_contract_seq_gen")
+    @SequenceGenerator(name = "altered_contract_seq_gen", sequenceName = "ALTERED_CONTRACT_SEQ", allocationSize = 1)
     private Long id;
 
     @Lob
@@ -32,4 +32,6 @@ public class Contract {
 
     @Enumerated(EnumType.STRING)
     private ContractStatus status;
+
+    private Long originalContractId;
 }

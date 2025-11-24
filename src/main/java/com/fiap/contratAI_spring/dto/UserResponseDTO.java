@@ -1,9 +1,5 @@
 package com.fiap.contratAI_spring.dto;
 
-// ContratAI/src/main/java/com.fiap/contratAI_spring.dto/UserResponseDTO.java
-
-package com.fiap.contratAI_spring.dto;
-
 import com.fiap.contratAI_spring.model.User;
 import lombok.Getter;
 import lombok.Setter;

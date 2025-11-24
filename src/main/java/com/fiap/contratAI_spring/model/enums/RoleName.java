@@ -1,4 +1,7 @@
 package com.fiap.contratAI_spring.model.enums;
 
-public class RoleName {
+public enum RoleName {
+    ADMIN,
+    LAWYER,
+    CLIENT
 }
